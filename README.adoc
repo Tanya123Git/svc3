@@ -20,7 +20,7 @@ Team
 - Nirma Parajuli
 - Manoj Menon
 
-Challenges - Figuring out how to run docker on GCP and pushing it to Docker took plenty of time. However it was a good learning curve for us to self explore the new teechnologies.
+Challenges - Figuring out how to run docker on GCP and pushing it to Docker Hub took plenty of time. However it was a good learning curve for us to self explore the new teechnologies.
 
 Current status - We have successfully built the docker image on GCP and pushed it Docker hub for deployment team to run on Kubernetes.
 
