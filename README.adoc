@@ -1,0 +1,26 @@
+Team 3
+
+Systems Description 
+  Brief Synopsis
+  
+Project summary - This Project is purely based on Google Cloud Solutions with Configuring Docker Image and containerizing it on GCP.
+  
+ Steps:
+ 1. We forked the files from Githb repository
+ 2. Modified the 'hello world' application.
+ 3. Packeged and ran the application on Docker using docker image.
+ 4. Pushed it back to the team's github repostiory (SVC3).
+ 5. Cloned the SVC3 repostory to GCP.
+ 6. Ran the docker image on GCP
+ 7. Containerized and pushed it to Docker Hub (Container registry)
+ 8. The kubernetes Deployment team took the control from here.
+
+Team
+- Tanya Garhwal
+- Nirma Parajuli
+- Manoj Menon
+
+Challenges - Figuring out how to run docker on GCP and pushing it to Docker Hub took plenty of time. However it was a good learning curve for us to self explore the new teechnologies.
+
+Current status - We have successfully built the docker image on GCP and pushed it Docker hub for deployment team to run on Kubernetes.
+
