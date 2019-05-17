@@ -14,6 +14,44 @@ Project summary - This Project is purely based on Google Cloud Solutions with Co
  6. Ran the docker image on GCP
  7. Containerized and pushed it to Docker Hub (Container registry)
  8. The kubernetes Deployment team took the control from here.
+ 
+ Coding instructions:
+ 
+ Open the GCP console
+ pwd
+ ls
+ git init
+ git clone https://github.com/dm-academy/svc3.git
+ make your directory - mkdir Service3
+ cp svc3 Service3/ -rwx
+ ls -la
+ cd svc3
+ cat package.json
+ nano package.json
+ node package.json
+ npm install
+ node server.js
+ nano Dockerfile
+ docker build -t your account/node-web-app .
+ nano run.sh
+  ./run.sh
+ nano pub.sh
+ # Inside pub.sh - to push docker image to container registry
+     docker tag [SOURCE_IMAGE] [HOSTNAME]/[PROJECT-ID]/[IMAGE]:[TAG]
+     examples: docker tag your server name/node-web-app gcr.io/rational-autumn-234222/dockersvc3
+     gcloud docker  -- push  gcr.io/rational-autumn-234222/dockersvc3:latest
+ gcloud auth configure-docker
+ sudo ./pub.sh
+ git add pub.sh
+ git commit -m 'docker pushed'
+ git config --global user.email tanyagarhwal.07@gmail.com
+ git config --global user.name your github name
+ git config --global user.email  email ID
+ git commit -m 'docker pushed'
+ git log
+ ls
+ git push -f origin master
+ exit
 
 Team
 - Tanya Garhwal
